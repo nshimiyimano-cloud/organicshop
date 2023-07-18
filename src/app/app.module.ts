@@ -14,9 +14,9 @@ import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.componen
 import { LoginComponent } from './login/login.component';
 import {AppRoutingModule} from './app-routing.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {AngularFireModule} from 'angularfire2';
-import {AngularFireDatabaseModule} from 'angularfire2/database';
-import {AngularFireAuthModule} from 'angularfire2/auth';
+//import {AngularFireModule} from 'angularfire2';
+//import {AngularFireDatabaseModule} from 'angularfire2/database';
+//import {AngularFireAuthModule} from 'angularfire2/auth';
 import { environment } from 'src/environment/development';
 
 
@@ -34,15 +34,11 @@ import { environment } from 'src/environment/development';
     AdminOrdersComponent,
     LoginComponent
   ],
-  imports: [
+  imports:[
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule,
-    AngularFireAuthModule
-    
-    
-  ],
+    NgbModule,
+     ],
   exports:[AppRoutingModule],
 
   providers: [],
