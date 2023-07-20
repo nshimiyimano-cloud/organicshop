@@ -8,8 +8,9 @@ describe('OrderSuccessComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ OrderSuccessComponent ]
-    })
+    declarations: [OrderSuccessComponent],
+    teardown: { destroyAfterEach: false }
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(OrderSuccessComponent);

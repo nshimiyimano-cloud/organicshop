@@ -8,8 +8,9 @@ describe('AdminOrdersComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AdminOrdersComponent ]
-    })
+    declarations: [AdminOrdersComponent],
+    teardown: { destroyAfterEach: false }
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(AdminOrdersComponent);

@@ -8,8 +8,9 @@ describe('CheckOutComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CheckOutComponent ]
-    })
+    declarations: [CheckOutComponent],
+    teardown: { destroyAfterEach: false }
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(CheckOutComponent);

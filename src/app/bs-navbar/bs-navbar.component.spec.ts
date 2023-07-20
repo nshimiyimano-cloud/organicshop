@@ -8,8 +8,9 @@ describe('BsNavbarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BsNavbarComponent ]
-    })
+    declarations: [BsNavbarComponent],
+    teardown: { destroyAfterEach: false }
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(BsNavbarComponent);

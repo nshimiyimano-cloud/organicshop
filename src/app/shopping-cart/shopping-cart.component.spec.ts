@@ -8,8 +8,9 @@ describe('ShoppingCartComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ShoppingCartComponent ]
-    })
+    declarations: [ShoppingCartComponent],
+    teardown: { destroyAfterEach: false }
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(ShoppingCartComponent);
